@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kazamatik — Gizlilik Politikası</title>
+  <meta name="description" content="Kazamatik gizlilik politikası. Hangi verilerin işlendiği, saklandığı ve silindiği.">
+  <style>
+    :root {
+      --green: #174631;
+      --green-dark: #0B2D1E;
+      --green-soft: #DDE8DE;
+      --gold: #9A742D;
+      --gold-soft: #F7EEDB;
+      --ivory: #FCFBF7;
+      --surface: #FFFFFF;
+      --surface-variant: #F6F5F0;
+      --ink: #263C2D;
+      --ink-muted: #647167;
+      --outline: #E5E6DF;
+    }
+    * { box-sizing: border-box; }
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: var(--ivory);
+      color: var(--ink);
+      font-family: "Iowan Old Style", "Palatino Linotype", Palatino, "Times New Roman", serif;
+      line-height: 1.55;
+    }
+    .page {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 28px 20px 64px;
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      margin-bottom: 28px;
+    }
+    .brand h1 {
+      margin: 0;
+      font-size: 1.45rem;
+      color: var(--green);
+      letter-spacing: 0.01em;
+    }
+    .lang {
+      display: flex;
+      gap: 8px;
+    }
+    .lang button {
+      border: 1px solid var(--outline);
+      background: var(--surface);
+      color: var(--ink-muted);
+      border-radius: 999px;
+      padding: 6px 12px;
+      font-size: 0.8rem;
+      cursor: pointer;
+      font-family: system-ui, sans-serif;
+    }
+    .lang button[aria-pressed="true"] {
+      background: var(--green);
+      color: #fff;
+      border-color: var(--green);
+    }
+    .date-block {
+      text-align: center;
+      margin-bottom: 28px;
+    }
+    .date-label {
+      font-family: system-ui, sans-serif;
+      font-size: 0.72rem;
+      letter-spacing: 0.12em;
+      color: var(--ink-muted);
+      text-transform: uppercase;
+    }
+    .date-value {
+      margin-top: 4px;
+      font-size: 1rem;
+    }
+    h2 {
+      font-size: 1.12rem;
+      margin: 0 0 10px;
+      color: var(--ink);
+    }
+    p { margin: 0; color: var(--ink-muted); font-family: system-ui, sans-serif; font-size: 0.95rem; }
+    section { margin-bottom: 28px; }
+    .callout {
+      margin-top: 12px;
+      background: rgba(246, 245, 240, 0.85);
+      border-radius: 12px;
+      padding: 16px;
+    }
+    .callout-title {
+      font-family: system-ui, sans-serif;
+      font-size: 0.92rem;
+      font-weight: 600;
+      margin-bottom: 8px;
+      color: var(--ink);
+    }
+    ul {
+      margin: 0;
+      padding-left: 18px;
+      color: var(--ink-muted);
+      font-family: system-ui, sans-serif;
+      font-size: 0.95rem;
+    }
+    li { margin: 6px 0; }
+    .note {
+      margin-top: 12px;
+      background: rgba(246, 245, 240, 0.6);
+      border-radius: 12px;
+      padding: 16px;
+      display: flex;
+      gap: 10px;
+      align-items: flex-start;
+      font-family: system-ui, sans-serif;
+      font-size: 0.82rem;
+      color: var(--ink-muted);
+    }
+    .lock {
+      width: 18px;
+      height: 18px;
+      flex: 0 0 18px;
+      color: var(--ink);
+    }
+    .footer {
+      margin-top: 40px;
+      text-align: center;
+      font-family: system-ui, sans-serif;
+      font-size: 0.78rem;
+      color: var(--ink-muted);
+    }
+    [hidden] { display: none !important; }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <header class="brand">
+      <h1>Kazamatik</h1>
+      <div class="lang" role="group" aria-label="Language">
+        <button type="button" id="btn-tr" aria-pressed="true">TR</button>
+        <button type="button" id="btn-en" aria-pressed="false">EN</button>
+      </div>
+    </header>
+
+    <article id="lang-tr">
+      <div class="date-block">
+        <div class="date-label">Yürürlük tarihi</div>
+        <div class="date-value">12 Ağustos 2026</div>
+      </div>
+      <section>
+        <h2>1. Giriş</h2>
+        <p>Bu metin, Kazamatik mobil uygulamasının hangi verileri işlediğini, bunları hangi amaçla kullandığını ve hangi durumlarda üçüncü taraflara aktardığını açıklar. Uygulamayı indirerek veya kullanarak bu politikayı okuduğunuzu kabul etmiş sayılırsınız. Metin, Google Play veri güvenliği beyanlarımızla uyumlu tutulmaya çalışılır; çelişki olursa uygulama içindeki güncel sürüm esas alınır.</p>
+      </section>
+      <section>
+        <h2>2. İşlenen veriler</h2>
+        <p>Kazamatik’in temel işlevi cihaz üzerinde çalışır. Kaza namazı ve oruç kayıtları, sayaçlar, notlar, mezhep ve bildirim tercihleri gibi bilgiler varsayılan olarak telefonunuzdaki uygulama depolama alanında tutulur. Aşağıdaki veriler yalnızca ilgili özelliği kullandığınızda işlenir:</p>
+        <div class="callout">
+          <div class="callout-title">Özelliklere göre veri türleri</div>
+          <ul>
+            <li>Google hesabı: Yedekleme / geri yükleme için Google ile giriş yaptığınızda hesabınızın e-posta adresi, görünen adınız ve hesap kimliği (uid) kullanılır; bu bilgiler ayarlar profilinde gösterilir ve yedeğiniz bu kimliğe bağlanır.</li>
+            <li>Namaz vakitleri: Seçtiğiniz il / ilçe bilgisi ve buna bağlı vakit verileri cihazınızda önbelleğe alınır.</li>
+            <li>Konum: Kıble ekranında izin verirseniz, yön hesabı için anlık konum kullanılır; bu konum sürekli izlenmez ve reklam amacıyla toplanmaz.</li>
+            <li>Destek: Yardım formundan gönderdiğiniz ad, e-posta, mesaj metni ve cihaz / sürüm bilgileri talebinize yanıt vermek için sunucuya iletilir.</li>
+            <li>Çökme kayıtları: Uygulama kararlılığını iyileştirmek için Firebase Crashlytics üzerinden teknik hata günlükleri ve kurulum kimliği alınabilir.</li>
+            <li>Bildirimler: Vakit, hatırlatma ve teşvik bildirimleri için cihaz bildirim izni ve yerel zamanlama kullanılır.</li>
+            <li>Yedekleme verileri: “Yedekleme Yap” dediğinizde kaza namazı ve oruç kayıtlarınız, notlarınız, kayıtlı konumlarınız ve uygulama tercihleriniz Google hesabınıza bağlı olarak Firebase (Google) sunucularında saklanır; yalnızca sizin hesabınızdan erişilebilir. Her yeni yedek bir öncekinin üzerine yazılır ve yalnızca siz elle yedekleme yaptığınızda gönderilir.</li>
+          </ul>
+        </div>
+      </section>
+      <section>
+        <h2>3. Kullanım amaçları</h2>
+        <p>Verilerinizi satmıyoruz, kiralamıyoruz veya reklam ağına vermiyoruz. İşleme amaçlarımız şunlarla sınırlıdır:</p>
+        <div class="callout">
+          <ul>
+            <li>Kaza takibi, namaz vakitleri, widget’lar ve tercihlerinizin çalışması</li>
+            <li>Sizin açtığınız bildirimlerin zamanında gösterilmesi</li>
+            <li>Destek taleplerine yanıt vermek ve aynı cihazdaki geçmiş yazışmaları göstermek</li>
+            <li>Çökmeleri tespit edip düzeltmek, sürüm ve cihaz uyumluluğunu izlemek</li>
+            <li>İsteğe bağlı yedekleme ve geri yükleme işlemlerini yürütmek</li>
+          </ul>
+        </div>
+      </section>
+      <section>
+        <h2>4. Üçüncü taraf hizmetler</h2>
+        <p>Bazı özellikler Google / Firebase altyapısına dayanır. Google ile giriş, Firebase Authentication ve Google kimlik hizmetlerini kullanır. Yedekleme yaptığınızda verileriniz Firebase Realtime Database üzerinde hesabınıza bağlı olarak saklanır. Destek mesajları da Firebase Realtime Database üzerinde tutulur. Çökme raporları Firebase Crashlytics’e gider. Bu sağlayıcılar kendi gizlilik politikalarına tabidir; aktarım yalnızca ilgili özelliğin işlemesi için gerekli ölçüde yapılır.</p>
+        <div class="note">
+          <svg class="lock" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1s3.1 1.39 3.1 3.1v2z"/></svg>
+          <span>Namaz vakitleri için seçtiğiniz yerleşim bilgisi ve kıble için verdiğiniz konum izni, reklam hedefleme veya konum satışı amacıyla kullanılmaz.</span>
+        </div>
+      </section>
+      <section>
+        <h2>5. Saklama, güvenlik ve silme</h2>
+        <p>Yerel kayıtlar Android’in uygulama depolama alanı ve sistem güvenlik önlemleriyle korunur. Destek kayıtları yanıt süreci boyunca saklanır; gerekmediğinde silinebilir. Uygulamayı cihazınızdan kaldırmak yerel verileri siler. Hesap veya yedekle bağlantılı verilerin silinmesi için Ayarlar &gt; Yardım &amp; Destek üzerinden talep iletebilirsiniz.</p>
+      </section>
+      <section>
+        <h2>6. Çocuklar</h2>
+        <p>Kazamatik çocuklara yönelik bir hizmet olarak tasarlanmamıştır. Bilerek 13 yaşın altındaki kullanıcılardan kişisel veri toplamayız. Böyle bir durum fark edilirse ilgili kayıtlar silinir.</p>
+      </section>
+      <section>
+        <h2>7. Değişiklikler</h2>
+        <p>Politika, uygulamanın özellikleri veya yasal yükümlülükler değiştikçe güncellenebilir. Yürürlük tarihi bu sayfanın üstünde yer alır. Önemli değişikliklerde uygulama içi bilgilendirme yapılmaya çalışılır.</p>
+      </section>
+      <section>
+        <h2>8. İletişim</h2>
+        <p>Gizlilik talepleri ve sorularınız için Ayarlar &gt; Yardım &amp; Destek &gt; Destek ile İletişim bölümünü kullanabilirsiniz.</p>
+      </section>
+    </article>
+
+    <article id="lang-en" hidden>
+      <div class="date-block">
+        <div class="date-label">Effective date</div>
+        <div class="date-value">12 August 2026</div>
+      </div>
+      <section>
+        <h2>1. Introduction</h2>
+        <p>This policy explains which data Kazamatik processes, why we process it, and when it is shared with third parties. By downloading or using the app, you acknowledge this policy. We aim to keep it aligned with our Google Play Data safety disclosures; if anything conflicts, the in-app version shown in the app prevails.</p>
+      </section>
+      <section>
+        <h2>2. Data we process</h2>
+        <p>Most of Kazamatik runs on your device. Make-up prayer and fasting records, counters, notes, madhab and notification preferences are stored in the app’s local storage by default. The following data is processed only when you use the related feature:</p>
+        <div class="callout">
+          <div class="callout-title">Data by feature</div>
+          <ul>
+            <li>Google account: When you sign in with Google for backup / restore, your account email, display name, and account id (uid) are used; these are shown in the settings profile and your backup is linked to this identity.</li>
+            <li>Prayer times: The city / district you select and related timetable data are cached on your device.</li>
+            <li>Location: If you grant permission on the Qibla screen, a one-time location fix may be used for direction; we do not continuously track you or collect location for ads.</li>
+            <li>Support: Name, email, message text, and device / version details you submit via Help are sent to our servers so we can reply.</li>
+            <li>Crash logs: Technical crash diagnostics and an installation ID may be collected via Firebase Crashlytics to improve stability.</li>
+            <li>Notifications: Prayer, reminder, and encouragement alerts use notification permission and local scheduling on your device.</li>
+            <li>Backup data: When you tap “Create Backup”, your make-up prayer and fasting records, notes, saved locations, and app preferences are stored on Firebase (Google) servers linked to your Google account and accessible only from your account. Each new backup overwrites the previous one and is uploaded only when you back up manually.</li>
+          </ul>
+        </div>
+      </section>
+      <section>
+        <h2>3. How we use data</h2>
+        <p>We do not sell, rent, or hand your data to advertising networks. Processing is limited to:</p>
+        <div class="callout">
+          <ul>
+            <li>Running make-up tracking, prayer times, widgets, and your preferences</li>
+            <li>Delivering notifications you have enabled</li>
+            <li>Answering support requests and showing prior threads on the same device</li>
+            <li>Detecting and fixing crashes, and monitoring version / device compatibility</li>
+            <li>Carrying out optional backup and restore</li>
+          </ul>
+        </div>
+      </section>
+      <section>
+        <h2>4. Third-party services</h2>
+        <p>Some features rely on Google / Firebase. Google sign-in uses Firebase Authentication and Google identity services. When you back up, your data is stored in Firebase Realtime Database linked to your account. Support messages are also stored in Firebase Realtime Database. Crash reports go to Firebase Crashlytics. Those providers have their own privacy policies; transfers are limited to what each feature needs.</p>
+        <div class="note">
+          <svg class="lock" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1s3.1 1.39 3.1 3.1v2z"/></svg>
+          <span>The locality you pick for prayer times and any location permission for Qibla are not used for ad targeting or location sale.</span>
+        </div>
+      </section>
+      <section>
+        <h2>5. Retention, security, and deletion</h2>
+        <p>Local records stay in Android app storage under the platform’s security model. Support records are kept for as long as needed to handle your request and may be deleted afterward. Uninstalling the app removes local data. To request deletion of account- or backup-linked data, contact us via Settings &gt; Help &amp; Support.</p>
+      </section>
+      <section>
+        <h2>6. Children</h2>
+        <p>Kazamatik is not directed at children. We do not knowingly collect personal data from users under 13. If we learn that such data was submitted, we delete it.</p>
+      </section>
+      <section>
+        <h2>7. Changes</h2>
+        <p>We may update this policy when features or legal requirements change. The effective date appears at the top of this page. We will try to notify you in-app of material changes.</p>
+      </section>
+      <section>
+        <h2>8. Contact</h2>
+        <p>For privacy questions or requests, use Settings &gt; Help &amp; Support &gt; Contact Support.</p>
+      </section>
+    </article>
+
+    <p class="footer">Kazamatik · Mekitech</p>
+  </main>
+  <script>
+    const tr = document.getElementById("lang-tr");
+    const en = document.getElementById("lang-en");
+    const btnTr = document.getElementById("btn-tr");
+    const btnEn = document.getElementById("btn-en");
+    function setLang(lang) {
+      const isTr = lang === "tr";
+      tr.hidden = !isTr;
+      en.hidden = isTr;
+      btnTr.setAttribute("aria-pressed", String(isTr));
+      btnEn.setAttribute("aria-pressed", String(!isTr));
+      document.documentElement.lang = lang;
+      document.title = isTr ? "Kazamatik — Gizlilik Politikası" : "Kazamatik — Privacy Policy";
+    }
+    btnTr.addEventListener("click", () => setLang("tr"));
+    btnEn.addEventListener("click", () => setLang("en"));
+  </script>
+</body>
+</html>
