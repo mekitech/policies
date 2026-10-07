@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Kazamatik — Gizlilik Politikası</title>
-  <meta name="description" content="Kazamatik gizlilik politikası. Hangi verilerin işlendiği, saklandığı ve silindiği.">
+  <title>Kazamatik — Gizlilik Politikası ve Kullanım Şartları</title>
+  <meta name="description" content="Kazamatik gizlilik politikası ve kullanım şartları. 10 Ekim 2026.">
   <style>
     :root {
       --green: #174631;
@@ -65,6 +65,11 @@
       color: #fff;
       border-color: var(--green);
     }
+    .doc-title {
+      margin: 0 0 16px;
+      font-size: 1.35rem;
+      color: var(--green);
+    }
     .date-block {
       text-align: center;
       margin-bottom: 28px;
@@ -85,8 +90,14 @@
       margin: 0 0 10px;
       color: var(--ink);
     }
-    p { margin: 0; color: var(--ink-muted); font-family: system-ui, sans-serif; font-size: 0.95rem; }
+    p { margin: 0 0 10px; color: var(--ink-muted); font-family: system-ui, sans-serif; font-size: 0.95rem; }
+    p:last-child { margin-bottom: 0; }
     section { margin-bottom: 28px; }
+    .split {
+      margin: 48px 0 28px;
+      border: 0;
+      border-top: 1px solid var(--outline);
+    }
     .callout {
       margin-top: 12px;
       background: rgba(246, 245, 240, 0.85);
@@ -133,6 +144,7 @@
       font-size: 0.78rem;
       color: var(--ink-muted);
     }
+    a { color: var(--green); }
     [hidden] { display: none !important; }
   </style>
 </head>
@@ -147,134 +159,382 @@
     </header>
 
     <article id="lang-tr">
+      <h2 class="doc-title">Gizlilik Politikası</h2>
       <div class="date-block">
         <div class="date-label">Yürürlük tarihi</div>
-        <div class="date-value">10 Eylül 2026</div>
+        <div class="date-value">10 Ekim 2026</div>
       </div>
+
       <section>
-        <h2>1. Giriş</h2>
-        <p>Bu metin, Kazamatik mobil uygulamasının hangi verileri işlediğini, bunları hangi amaçla kullandığını ve hangi durumlarda üçüncü taraflara aktardığını açıklar. Uygulamayı indirerek veya kullanarak bu politikayı okuduğunuzu kabul etmiş sayılırsınız. Metin, Google Play veri güvenliği beyanlarımızla uyumlu tutulmaya çalışılır; çelişki olursa uygulama içindeki güncel sürüm esas alınır.</p>
+        <h2>1. Veri sorumlusu ve giriş</h2>
+        <p>Bu metin, Mehmet Kirazlı (MeKiTech) tarafından sunulan Kazamatik mobil uygulamasının hangi verileri işlediğini, hangi amaçla kullandığını ve hangi durumlarda üçüncü taraflara aktardığını açıklar. 6698 sayılı Kişisel Verilerin Korunması Kanunu (“KVKK”) kapsamında veri sorumlusu Mehmet Kirazlı’dır. MeKiTech, Google Play ve Huawei AppGallery’deki geliştirici adıdır.</p>
+        <p>Veri sorumlusu iletişim:<br>Ad Soyad: Mehmet Kirazlı<br>Ticari unvan: MeKiTech<br>Adres: Eyüpsultan / İstanbul / Türkiye<br>E-posta: <a href="mailto:mekitech.tr@gmail.com">mekitech.tr@gmail.com</a></p>
+        <p>Güncel metin ayrıca <a href="https://mekitech.github.io/policies/kazamatik/">https://mekitech.github.io/policies/kazamatik/</a> adresinde yayımlanır. Uygulamayı indirerek veya kullanarak bu politikayı okuduğunuzu kabul etmiş sayılırsınız. Metin, mağaza veri güvenliği beyanlarımızla uyumlu tutulmaya çalışılır; çelişki olursa uygulama içindeki güncel sürüm esas alınır.</p>
       </section>
+
       <section>
         <h2>2. İşlenen veriler</h2>
-        <p>Kazamatik’in temel işlevi cihaz üzerinde çalışır. Kaza namazı ve oruç kayıtları, sayaçlar, notlar, mezhep ve bildirim tercihleri gibi bilgiler varsayılan olarak telefonunuzdaki uygulama depolama alanında tutulur. Aşağıdaki veriler yalnızca ilgili özelliği kullandığınızda işlenir:</p>
+        <p>Kazamatik varsayılan olarak cihaz üzerinde çalışır. Kaza namazı ve oruç kayıtları, günlük namaz takibi, zikirmatik sayaçları, notlar, mezhep/cinsiyet/dil tercihleri, widget ve bildirim ayarları gibi bilgiler telefonunuzdaki uygulama depolama alanında (Room ve DataStore) tutulur. Android’in otomatik uygulama yedeklemesi devre dışıdır; buluta yalnızca Google ile giriş yapıp yedekleme özelliğini kullandığınızda veri gönderilir.</p>
+        <p>Namaz/oruç kayıtları, mezhep tercihi ve benzeri ibadet takip verileri KVKK kapsamında özel nitelikli kişisel veri sayılabilecek niteliktedir. Bu veriler varsayılan olarak yalnızca cihazınızda tutulur; bulut yedekleme veya Dua Kardeşliği gibi özellikleri siz açmadıkça sunucularımıza aktarılmaz.</p>
+        <p>Mezhep, vitir kazasının hesaba katılıp katılmaması, namazın kılınışı, kerahat vakitleri ve tesbihat sırasının seçtiğiniz mezhebe göre gösterilmesi için sorulur. Cinsiyet, günlük namaz takibinde özür günü seçeneğinin açılıp açılmaması için sorulur. İkisi de reklam veya hedefleme için kullanılmaz. Google ile yedek alırsanız bu tercihler yedeğe dahil olur. Kaza namazı hesabı yaptığınızda cinsiyetiniz, Google Play sürümünde kimliğiniz yazılmadan toplam bir sayaca eklenir.</p>
+        <p>Aşağıdaki veriler yalnızca ilgili özelliği kullandığınızda işlenir:</p>
         <div class="callout">
           <div class="callout-title">Özelliklere göre veri türleri</div>
           <ul>
-            <li>Google hesabı: Yedekleme / geri yükleme için Google ile giriş yaptığınızda hesabınızın e-posta adresi, görünen adınız ve hesap kimliği (uid) kullanılır; bu bilgiler ayarlar profilinde gösterilir ve yedeğiniz bu kimliğe bağlanır.</li>
-            <li>Namaz vakitleri: Seçtiğiniz il / ilçe bilgisi ve buna bağlı vakit verileri cihazınızda önbelleğe alınır.</li>
-            <li>Konum: Kıble ekranında izin verirseniz, yön hesabı için anlık konum kullanılır; bu konum sürekli izlenmez ve reklam amacıyla toplanmaz.</li>
-            <li>Destek: Yardım formundan gönderdiğiniz ad, e-posta, mesaj metni ve cihaz / sürüm bilgileri talebinize yanıt vermek için sunucuya iletilir.</li>
-            <li>Çökme kayıtları: Uygulama kararlılığını iyileştirmek için Firebase Crashlytics üzerinden teknik hata günlükleri ve kurulum kimliği alınabilir.</li>
-            <li>Bildirimler: Vakit, hatırlatma ve teşvik bildirimleri için cihaz bildirim izni ve yerel zamanlama kullanılır.</li>
-            <li>Yedekleme verileri: “Yedekleme Yap” dediğinizde kaza namazı ve oruç kayıtlarınız, notlarınız, kayıtlı konumlarınız ve uygulama tercihleriniz Google hesabınıza bağlı olarak Firebase (Google) sunucularında saklanır; yalnızca sizin hesabınızdan erişilebilir. Her yeni yedek bir öncekinin üzerine yazılır ve yalnızca siz elle yedekleme yaptığınızda gönderilir.</li>
+            <li>Google hesabı: Yedekleme, geri yükleme ve Dua Kardeşliği için Google ile giriş yaptığınızda e-posta, görünen ad ve hesap kimliği (uid) kimlik doğrulama için kullanılır. Yedek verileriniz e-posta kutunuza veya Google Drive’a dosya olarak gitmez; Firebase sunucularında yalnızca sizin hesabınıza bağlı saklanır.</li>
+            <li>Namaz vakitleri: Seçtiğiniz ülke/il/ilçe cihazınızda saklanır; vakit verileri ezanvakti.imsakiyem.com servisinden alınarak yerelde önbelleğe alınır. Bu isteklerde ad veya e-posta gönderilmez.</li>
+            <li>Konum: Kıble, yakın camiler veya konum seçiminde izin verirseniz anlık konum kullanılır; arka planda sürekli izleme yoktur. Yakın cami aramasında koordinatlar Overpass/OpenStreetMap servislerine gidebilir.</li>
+            <li>Destek: Yardım formundan gönderdiğiniz ad, e-posta, mesaj; cihaz tanımlayıcısı (ANDROID_ID), marka/model, Android sürümü, uygulama sürümü ve dil bilgisi Firebase sunucularına iletilir.</li>
+            <li>Çökme kayıtları: Google Play sürümünde Firebase Crashlytics, AppGallery sürümünde AGConnect Crash; teknik hata günlükleri, kurulum kimliği ve IP adresi gibi bağlantı kayıtları alınabilir.</li>
+            <li>Bildirimler: Ezan alarmı, ibadet hatırlatmaları ve widget bildirimleri için bildirim izni ve cihazdaki yerel zamanlama kullanılır.</li>
+            <li>Yedekleme: Google ile giriş sonrası manuel yedeklemede kaza ve oruç borçları ile oturumları, günlük namaz işaretleri, nafile kayıtları, notlar, kayıtlı konumlar, zikirmatik sayaçları ve özel zikirler, zinciri kırma kayıtları, Kuran radyosu favorileri, mezhep, cinsiyet, dil ve diğer tercihler ile cihaz marka/model bilgisi Firebase Realtime Database’de (Google altyapısı) hesabınıza özel tutulur. Yedek ses dosyası veya fotoğraf içermez. Gmail’e ek veya Drive’a dosya gönderilmez; yalnızca uygulama içinden geri yüklenebilir.</li>
+            <li>Dua Kardeşliği: Google girişi sonrası paylaştığınız dua başlığı, açıklama, kategori ve (anonim değilse) görünen adınız Firebase’de saklanır; âmin kayıtları uid ile ilişkilendirilir.</li>
+            <li>Anonim istatistikler: Google Play sürümünde namaz/oruç hesaplama sayıları (cinsiyet dağılımı) ve il/ilçe tercihlerinin toplu sayımı kişisel kimlik olmadan Firebase’e yazılır. AppGallery sürümünde bu sayaç gönderilmez.</li>
+            <li>Kullanım analitiği: Açılan ekranlar Google Analytics (Play) veya Huawei HiAnalytics (AppGallery) ile işlenir; uygulama iyileştirmesi içindir, kapatma seçeneği sunulmaz.</li>
+            <li>Push altyapısı: Bildirim kanallarının çalışması için FCM veya Huawei Push token’ı cihazınızda tutulabilir.</li>
+          </ul>
+        </div>
+        <div class="callout">
+          <div class="callout-title">Toplamadığımız veriler</div>
+          <ul>
+            <li>Verilerinizi satma veya kiralama</li>
+            <li>Diğer uygulamalar arası davranışsal izleme</li>
+            <li>Rehber, mikrofon kaydı veya kamera görüntüsünün sunucuya gönderilmesi</li>
+            <li>Arka planda sürekli konum izleme</li>
           </ul>
         </div>
       </section>
+
       <section>
-        <h2>3. Kullanım amaçları</h2>
-        <p>Verilerinizi satmıyoruz, kiralamıyoruz veya reklam ağına vermiyoruz. İşleme amaçlarımız şunlarla sınırlıdır:</p>
+        <h2>3. Amaçlar ve hukuki sebepler</h2>
+        <p>Verilerinizi satmıyoruz veya kiralamıyoruz. İşleme amaçlarımız şunlarla sınırlıdır:</p>
         <div class="callout">
           <ul>
-            <li>Kaza takibi, namaz vakitleri, widget’lar ve tercihlerinizin çalışması</li>
-            <li>Sizin açtığınız bildirimlerin zamanında gösterilmesi</li>
+            <li>Kaza takibi, namaz vakitleri, widget’lar, zikirmatik, dualar, notlar ve tercihlerinizin çalışması</li>
+            <li>Açtığınız bildirim ve alarmların zamanında gösterilmesi</li>
             <li>Destek taleplerine yanıt vermek ve aynı cihazdaki geçmiş yazışmaları göstermek</li>
             <li>Çökmeleri tespit edip düzeltmek, sürüm ve cihaz uyumluluğunu izlemek</li>
-            <li>İsteğe bağlı yedekleme ve geri yükleme işlemlerini yürütmek</li>
+            <li>İsteğe bağlı yedekleme, geri yükleme ve Dua Kardeşliği hizmetlerini yürütmek</li>
+          </ul>
+        </div>
+        <div class="callout">
+          <div class="callout-title">KVKK kapsamında hukuki sebepler (özet)</div>
+          <ul>
+            <li>Dil, widget ve bildirim ayarları gibi özel nitelikli olmayan cihaz verileri: hizmetin sunulması (KVKK m.5/2-c). Mezhep, cinsiyet ve ibadet kayıtları: açık rıza (KVKK m.6). Onboarding’de metni kabul etmeniz ve ilgili tercihi kaydetmeniz rıza sayılır.</li>
+            <li>Google yedekleme ve Dua Kardeşliği: açık rıza (KVKK m.5/1; yedekteki özel nitelikli veriler için m.6). Bu özellikleri açarak rıza vermiş sayılırsınız.</li>
+            <li>Destek mesajları: sözleşmenin ifası ve meşru menfaat (talebe yanıt)</li>
+            <li>Çökme kayıtları ve anonim istatistikler: meşru menfaat (güvenlik ve iyileştirme)</li>
+            <li>Kullanım analitiği: meşru menfaat (uygulama iyileştirme)</li>
           </ul>
         </div>
       </section>
+
       <section>
         <h2>4. Üçüncü taraf hizmetler</h2>
-        <p>Bazı özellikler Google / Firebase altyapısına dayanır. Google ile giriş, Firebase Authentication ve Google kimlik hizmetlerini kullanır. Yedekleme yaptığınızda verileriniz Firebase Realtime Database üzerinde hesabınıza bağlı olarak saklanır. Destek mesajları da Firebase Realtime Database üzerinde tutulur. Çökme raporları Firebase Crashlytics’e gider. Bu sağlayıcılar kendi gizlilik politikalarına tabidir; aktarım yalnızca ilgili özelliğin işlemesi için gerekli ölçüde yapılır.</p>
+        <p>Bazı özellikler aşağıdaki sağlayıcılara dayanır. Aktarım yalnızca ilgili özelliğin çalışması için gerekli ölçüdedir; sağlayıcılar kendi gizlilik politikalarına tabidir.</p>
+        <div class="callout">
+          <div class="callout-title">Hizmet sağlayıcılar ve aktarılan veri</div>
+          <ul>
+            <li>Google / Firebase (Authentication, Realtime Database, Crashlytics, Analytics, FCM): yedek, destek, Dua Kardeşliği, çökme ve analitik verileri</li>
+            <li>Huawei (Push Kit, HiAnalytics, AGConnect Crash): AppGallery sürümünde eşdeğer bildirim, analitik ve çökme hizmetleri</li>
+            <li>ezanvakti.imsakiyem.com: il/ilçe kimliği ile vakit verisi (kişisel kimlik gönderilmez)</li>
+            <li>OpenStreetMap / Overpass / harita karoları: yakın cami aramasında koordinatlar Overpass sunucularına gider. Yedekler arasında maps.mail.ru da vardır; koordinat yurt dışına iletilebilir. Ad veya e-posta gönderilmez.</li>
+            <li>Google Play / AppGallery: uygulama dağıtımı</li>
+            <li>Canlı yayın ve Kuran radyosu: Harameyn yayınını veya radyoyu açtığınızda bağlantı kaydı (IP) yayın sunucularına gider. İstasyon listesi mp3quran.net üzerinden, Mekke–Medine yayını Akamai / GlobeCast üzerinden alınır. Hesap, ad veya e-posta gönderilmez.</li>
+          </ul>
+        </div>
         <div class="note">
           <svg class="lock" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1s3.1 1.39 3.1 3.1v2z"/></svg>
-          <span>Namaz vakitleri için seçtiğiniz yerleşim bilgisi ve kıble için verdiğiniz konum izni, reklam hedefleme veya konum satışı amacıyla kullanılmaz.</span>
+          <span>Konum, profil satışı veya hedefleme amacıyla kullanılmaz.</span>
         </div>
       </section>
+
       <section>
         <h2>5. Saklama, güvenlik ve silme</h2>
-        <p>Yerel kayıtlar Android’in uygulama depolama alanı ve sistem güvenlik önlemleriyle korunur. Destek kayıtları yanıt süreci boyunca saklanır; gerekmediğinde silinebilir. Uygulamayı cihazınızdan kaldırmak yerel verileri siler. Hesap veya yedekle bağlantılı verilerin silinmesi için Ayarlar &gt; Yardım &amp; Destek üzerinden talep iletebilirsiniz.</p>
+        <p>Yerel kayıtlar cihazınızda tutulur; uygulamayı kaldırmak yerel verileri siler. Android cihaz transferi (Quick Switch / kablo) ile veri taşınabilir; otomatik Google yedek kapalıdır.</p>
+        <div class="callout">
+          <div class="callout-title">Saklama süreleri (özet)</div>
+          <ul>
+            <li>Yerel veriler: siz silene veya uygulamayı kaldırana kadar</li>
+            <li>Yedek ve Dua Kardeşliği: Google hesabınız veya kayıtlar silinene kadar</li>
+            <li>Destek mesajları: talebin sonuçlandırılması ve olası uyuşmazlıklarda ispat için gerekli süre boyunca</li>
+            <li>Çökme/analitik kayıtları: sağlayıcı varsayılan süreleri ve iyileştirme ihtiyacı kadar</li>
+          </ul>
+        </div>
+        <p>Silme ve KVKK hakları (m.11): Kişisel verilerinizin işlenip işlenmediğini öğrenme, bilgi talep etme, düzeltme, silme, aktarılan üçüncü kişileri bilme ve kanuna aykırı işlemde itiraz etme haklarına sahipsiniz. Taleplerinizi <a href="mailto:mekitech.tr@gmail.com">mekitech.tr@gmail.com</a> adresine veya Ayarlar &gt; Yardım &amp; Destek üzerinden iletebilirsiniz; en geç 30 gün içinde yanıt verilir. Yedek ve Dua Kardeşliği silme talepleri doğrulandıktan sonra makul sürede işlenir; sunucu silme işlemi teknik süreç nedeniyle yanıt süresini aşabilir. Uygunsuz Dua Kardeşliği içeriği için aynı kanallardan şikayet edebilirsiniz.</p>
       </section>
+
       <section>
         <h2>6. Çocuklar</h2>
-        <p>Kazamatik çocuklara yönelik bir hizmet olarak tasarlanmamıştır. Bilerek 13 yaşın altındaki kullanıcılardan kişisel veri toplamayız. Böyle bir durum fark edilirse ilgili kayıtlar silinir.</p>
+        <p>Kazamatik çocuklara özel tasarlanmamıştır. Bilerek 13 yaşın altındaki kullanıcılardan kişisel veri toplamayız. Böyle bir durum fark edilirse ilgili kayıtlar silinir.</p>
       </section>
+
       <section>
         <h2>7. Değişiklikler</h2>
-        <p>Politika, uygulamanın özellikleri veya yasal yükümlülükler değiştikçe güncellenebilir. Yürürlük tarihi bu sayfanın üstünde yer alır. Önemli değişikliklerde uygulama içi bilgilendirme yapılmaya çalışılır.</p>
+        <p>Politika güncellenebilir; yürürlük tarihi bu ekranın üstünde ve web adresinde yer alır. Önemli değişikliklerde uygulama içi bilgilendirme yapılmaya çalışılır.</p>
       </section>
+
       <section>
         <h2>8. İletişim</h2>
-        <p>Gizlilik talepleri ve sorularınız için Ayarlar &gt; Yardım &amp; Destek &gt; Destek ile İletişim bölümünü kullanabilirsiniz.</p>
+        <p>Gizlilik ve KVKK talepleri: <a href="mailto:mekitech.tr@gmail.com">mekitech.tr@gmail.com</a> veya Ayarlar &gt; Yardım &amp; Destek &gt; Bize Yazın.<br>Web: <a href="https://mekitech.github.io/policies/kazamatik/">https://mekitech.github.io/policies/kazamatik/</a><br>Veri sorumlusu: Mehmet Kirazlı (MeKiTech) — Eyüpsultan / İstanbul / Türkiye</p>
+      </section>
+
+      <section>
+        <h2>9. Cihaz izinleri</h2>
+        <p>İzinler yalnızca ilgili özellik için istenir; reddederseniz o özellik sınırlı çalışabilir:</p>
+        <div class="callout">
+          <ul>
+            <li>İnternet ve ağ durumu: Namaz vakitleri, yedekleme, destek, Dua Kardeşliği, harita, canlı yayın, Kuran radyosu ve güncelleme kontrolü.</li>
+            <li>Bildirim: Ezan alarmı, ibadet hatırlatmaları ve widget bildirimleri.</li>
+            <li>Konum (ince/kaba): Kıble yönü, yakın camiler haritası ve konum seçimi; sürekli arka plan izlemesi yoktur.</li>
+            <li>Tam zamanlı alarm ve cihaz açılışı: Ezan ve ibadet alarmlarının doğru saatte çalması; yeniden başlatma sonrası yeniden planlama.</li>
+            <li>Ön plan servisi / medya oynatma: Ezan sesinin arka planda çalması.</li>
+            <li>Tam ekran bildirim ve uyanık tutma: Ezan alarmının kilit ekranında güvenilir şekilde gösterilmesi.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section>
+        <h2>10. Yurt dışına aktarım</h2>
+        <p>Yedekleme, destek, Dua Kardeşliği, çökme raporları, analitik ve anonim istatistikler Google Firebase (ABD vb.) veya Huawei altyapısı üzerindeki sunuculara aktarılabilir. Yakın cami koordinatları Overpass sunucularına (yedek olarak maps.mail.ru dahil), canlı yayın ve radyo bağlantıları ise ilgili yayın sunucularına iletilebilir. Bu aktarımlar, söz konusu hizmetin teknik olarak sunulması için gereklidir. Yerel ibadet kayıtlarınız varsayılan olarak cihazınızda kalır.</p>
+      </section>
+
+      <hr class="split">
+      <h2 class="doc-title">Kullanım Şartları</h2>
+      <div class="date-block">
+        <div class="date-label">Yürürlük tarihi</div>
+        <div class="date-value">10 Ekim 2026</div>
+      </div>
+
+      <section>
+        <h2>1. Kabul</h2>
+        <p>Kazamatik’i indirerek, açarak veya özelliklerini kullanarak bu Kullanım Şartları’nı ve Gizlilik Politikası’nı (<a href="https://mekitech.github.io/policies/kazamatik/">https://mekitech.github.io/policies/kazamatik/</a>) kabul etmiş olursunuz. Kabul etmiyorsanız uygulamayı kullanmayın ve cihazınızdan kaldırın.</p>
+      </section>
+      <section>
+        <h2>2. Hizmetin niteliği</h2>
+        <p>Kazamatik; Mehmet Kirazlı (MeKiTech) tarafından sunulan; kaza namazı ve oruç borcu hesaplama/takip, namaz vakitleri, ezan alarmı, günlük namaz, widget’lar, kilit ekranı namaz çubuğu, kıble yönü, yakın camiler, dualar, esma, zikirmatik, notlar, Dua Kardeşliği ve benzeri yardımcı araçları içeren bir ibadet defteri ve hatırlatma aracıdır. Resmi fetva makamı, dini otorite veya müftülük yerine geçmez. Mezhep tercihine göre yapılan hesaplar pratik kolaylık içindir; kişisel durumunuzda şüphe varsa ehil bir mercie danışmanız gerekir.</p>
+      </section>
+      <section>
+        <h2>3. Kullanım kuralları</h2>
+        <p>Uygulamayı yürürlükteki mevzuata uygun kullanmalısınız. Yetkisiz erişim, hizmeti bozma, zararlı yazılım yayma veya destek kanallarının kötüye kullanımı yasaktır. Dua Kardeşliği’nde hakaret, nefret, yanıltıcı veya yasa dışı içerik paylaşamazsınız; uygunsuz içerikleri <a href="mailto:mekitech.tr@gmail.com">mekitech.tr@gmail.com</a> veya Yardım &amp; Destek formu ile bildirebilirsiniz. Girdiğiniz kayıtların doğruluğu size aittir.</p>
+      </section>
+      <section>
+        <h2>4. İçerik ve üçüncü taraf kaynaklar</h2>
+        <p>Nasıl kılınır, soru-cevap ve benzeri metinler genel bilgilendirme amaçlıdır; dini hüküm yerine geçmez. Namaz vakitleri harici kaynaklardan alınır; hata veya gecikme olabilir. Kıble yönü cihaz sensörleri ve konum iznine bağlıdır. Harita bilgisi üçüncü taraflardan gelir. Harameyn yayını ve Kuran radyosu üçüncü taraf içeriğidir; kesinti, gecikme veya içerikten sorumlu değiliz. Ücretsiz kullanımda bu iki özellik, uygulama içinde gösterilen günlük süreyle sınırlıdır; süre dolunca yayın durur. Yedekleme Google / Firebase altyapısını kullanır ve “olduğu gibi” sunulur. Geri yükleme cihazdaki mevcut kayıtların yerine seçtiğiniz hesabın yedeğini yazar. Manuel yedekleme ve geri yükleme uygulama içinde gösterilen kota kurallarına tabidir.</p>
+      </section>
+      <section>
+        <h2>5. Hesap, yedekleme ve bildirimler</h2>
+        <p>Google hesabı ile yedekleme ve Dua Kardeşliği isteğe bağlıdır; açtığınızda Gizlilik Politikası’ndaki bulut işleme koşullarını kabul etmiş sayılırsınız. Hesap güvenliği size aittir. Bildirimleri Ayarlar’dan yönetebilirsiniz. Cihaz değişikliği veya uygulama silme sonrası yedek almadıysanız yerel veriler kaybolabilir. Eski sürüm veri aktarımı (legacy import) isteğe bağlıdır ve her cihazda garanti edilmez.</p>
+      </section>
+      <section>
+        <h2>6. Fikri mülkiyet</h2>
+        <p>Kazamatik adı, arayüz, kod, görseller ve uygulama içi özgün içerikler Mehmet Kirazlı (MeKiTech) ve ilgili hak sahiplerine aittir. İzinsiz kopyalama, tersine mühendislik (yasal istisnalar hariç), yeniden dağıtım veya ticari yeniden paketleme yasaktır.</p>
+      </section>
+      <section>
+        <h2>7. Sorumluluğun sınırlandırılması</h2>
+        <p>Hizmet “olduğu gibi” sunulur. Kesintisiz veya hatasız çalışacağı garanti edilmez. Yasaların izin verdiği ölçüde; veri kaybı, yanlış hesaplama, kaçırılan bildirim, cihaz uyumsuzluğu veya üçüncü taraf kesintilerinden doğan dolaylı zararlardan sorumlu olmayız. Zorunlu tüketici hakları saklıdır.</p>
+      </section>
+      <section>
+        <h2>8. Değişiklikler ve fesih</h2>
+        <p>Bu şartlar güncellenebilir; yürürlük tarihi ekranın üstünde ve web adresinde belirtilir. Özellikler değiştirilebilir veya kaldırılabilir. Kabul etmiyorsanız kullanımı bırakmanız yeterlidir. Ciddi ihlallerde hesap veya destek erişimi kısıtlanabilir.</p>
+      </section>
+      <section>
+        <h2>9. Uygulanacak hukuk ve iletişim</h2>
+        <p>Bu şartlar Türkiye Cumhuriyeti hukukuna tabidir. Tüketici sıfatıyla ikametgahınız mahkemelerinin yetkili olabileceği dahil zorunlu tüketici hakları saklıdır.</p>
+        <p>Hizmet sağlayıcı: Mehmet Kirazlı (MeKiTech)<br>Adres: Eyüpsultan / İstanbul / Türkiye<br>E-posta: <a href="mailto:mekitech.tr@gmail.com">mekitech.tr@gmail.com</a><br>Web: <a href="https://mekitech.github.io/policies/kazamatik/">https://mekitech.github.io/policies/kazamatik/</a></p>
+        <p>Cihaz izinleri Gizlilik Politikası’nda açıklanmıştır.</p>
       </section>
     </article>
 
     <article id="lang-en" hidden>
+      <h2 class="doc-title">Privacy Policy</h2>
       <div class="date-block">
         <div class="date-label">Effective date</div>
-        <div class="date-value">12 August 2026</div>
+        <div class="date-value">10 October 2026</div>
       </div>
+
       <section>
-        <h2>1. Introduction</h2>
-        <p>This policy explains which data Kazamatik processes, why we process it, and when it is shared with third parties. By downloading or using the app, you acknowledge this policy. We aim to keep it aligned with our Google Play Data safety disclosures; if anything conflicts, the in-app version shown in the app prevails.</p>
+        <h2>1. Data controller and introduction</h2>
+        <p>This policy explains which data Kazamatik, provided by Mehmet Kirazlı (MeKiTech), processes, why, and when it is shared with third parties. Under Türkiye’s Law No. 6698 on Protection of Personal Data (KVKK), the data controller is Mehmet Kirazlı. MeKiTech is the developer name on Google Play and Huawei AppGallery.</p>
+        <p>Controller contact:<br>Name: Mehmet Kirazlı<br>Trade name: MeKiTech<br>Address: Eyüpsultan / Istanbul / Türkiye<br>Email: <a href="mailto:mekitech.tr@gmail.com">mekitech.tr@gmail.com</a></p>
+        <p>The current text is also published at <a href="https://mekitech.github.io/policies/kazamatik/">https://mekitech.github.io/policies/kazamatik/</a>. By downloading or using the app, you acknowledge this policy. We aim to keep it aligned with store Data safety disclosures; if anything conflicts, the in-app version prevails.</p>
       </section>
+
       <section>
         <h2>2. Data we process</h2>
-        <p>Most of Kazamatik runs on your device. Make-up prayer and fasting records, counters, notes, madhab and notification preferences are stored in the app’s local storage by default. The following data is processed only when you use the related feature:</p>
+        <p>Kazamatik runs on your device by default. Make-up prayer and fasting records, daily prayer tracking, dhikr counters, notes, madhab/gender/language preferences, widget and notification settings are stored locally (Room and DataStore). Android auto-backup is disabled; data is sent to the cloud only when you sign in with Google and use backup.</p>
+        <p>Prayer/fasting records, madhab choice, and similar worship-tracking data may qualify as special-category personal data under KVKK. By default this stays on your device only; it is not sent to our servers unless you use cloud backup or Prayer Brotherhood.</p>
+        <p>Madhab is asked so witr make-up rules, how to pray, kerahat times, and tesbihat order follow the school you select. Gender is asked so the daily prayer tracker can show or hide the excused-day option. Neither is used for advertising or targeting. If you back up with Google, these preferences are included. When you save a make-up prayer calculation, gender is added to an aggregate counter on the Google Play build, without your identity.</p>
+        <p>The following is processed only when you use the related feature:</p>
         <div class="callout">
-          <div class="callout-title">Data by feature</div>
+          <div class="callout-title">Data types by feature</div>
           <ul>
-            <li>Google account: When you sign in with Google for backup / restore, your account email, display name, and account id (uid) are used; these are shown in the settings profile and your backup is linked to this identity.</li>
-            <li>Prayer times: The city / district you select and related timetable data are cached on your device.</li>
-            <li>Location: If you grant permission on the Qibla screen, a one-time location fix may be used for direction; we do not continuously track you or collect location for ads.</li>
-            <li>Support: Name, email, message text, and device / version details you submit via Help are sent to our servers so we can reply.</li>
-            <li>Crash logs: Technical crash diagnostics and an installation ID may be collected via Firebase Crashlytics to improve stability.</li>
-            <li>Notifications: Prayer, reminder, and encouragement alerts use notification permission and local scheduling on your device.</li>
-            <li>Backup data: When you tap “Create Backup”, your make-up prayer and fasting records, notes, saved locations, and app preferences are stored on Firebase (Google) servers linked to your Google account and accessible only from your account. Each new backup overwrites the previous one and is uploaded only when you back up manually.</li>
+            <li>Google account: For backup, restore, and Prayer Brotherhood, your email, display name, and uid are used for authentication. Backup data is not sent to your inbox or Google Drive as a file; it is stored on Firebase servers linked only to your account.</li>
+            <li>Prayer times: Your selected country/city/district is stored on device; timetables are fetched from ezanvakti.imsakiyem.com and cached locally. Name and email are not sent.</li>
+            <li>Location: On Qibla, nearby mosques, or location picker screens, a one-time/current fix is used; no continuous background tracking. Nearby mosques may send coordinates to Overpass/OpenStreetMap services.</li>
+            <li>Support: Name, email, message, ANDROID_ID, brand/model, Android version, app version, and language from Help are sent to Firebase servers.</li>
+            <li>Crash logs: Firebase Crashlytics on Google Play builds; AGConnect Crash on AppGallery builds; technical logs, installation id, and connection records such as IP may be collected.</li>
+            <li>Notifications: Adhan alarms, worship reminders, and widget alerts use notification permission and local scheduling on your device.</li>
+            <li>Backup: After Google sign-in, manual backup stores make-up prayer and fasting debts and sessions, daily prayer marks, voluntary prayer records, notes, saved locations, dhikr counters and custom dhikr, chain-keeping records, Quran radio favorites, madhab, gender, language and other preferences, and device brand/model in Firebase Realtime Database (Google infrastructure), linked to your account. The backup does not include audio files or photos. Nothing is sent to Gmail or Drive; restore is only through the app.</li>
+            <li>Prayer Brotherhood: After Google sign-in, your prayer title, description, category, and (unless anonymous) display name are stored on Firebase; amin records are linked to your uid.</li>
+            <li>Anonymous statistics: On the Google Play build, aggregate prayer/fasting calculation counts (by gender) and saved district counts are written to Firebase without personal identity. The AppGallery build does not send these counters.</li>
+            <li>Usage analytics: Screen views via Google Analytics (Play) or Huawei HiAnalytics (AppGallery) for app improvement; no opt-out is offered.</li>
+            <li>Push infrastructure: An FCM or Huawei Push token may be stored on your device so notification channels can work.</li>
+          </ul>
+        </div>
+        <div class="callout">
+          <div class="callout-title">What we do not collect</div>
+          <ul>
+            <li>Selling or renting your data</li>
+            <li>Cross-app behavioral tracking</li>
+            <li>Uploading contacts, microphone recordings, or camera images to our servers</li>
+            <li>Continuous background location tracking</li>
           </ul>
         </div>
       </section>
+
       <section>
-        <h2>3. How we use data</h2>
-        <p>We do not sell, rent, or hand your data to advertising networks. Processing is limited to:</p>
+        <h2>3. Purposes and legal bases</h2>
+        <p>We do not sell or rent your data. Processing is limited to:</p>
         <div class="callout">
           <ul>
-            <li>Running make-up tracking, prayer times, widgets, and your preferences</li>
-            <li>Delivering notifications you have enabled</li>
+            <li>Running make-up tracking, prayer times, widgets, dhikr, duas, notes, and your preferences</li>
+            <li>Delivering notifications and alarms you have enabled</li>
             <li>Answering support requests and showing prior threads on the same device</li>
             <li>Detecting and fixing crashes, and monitoring version / device compatibility</li>
-            <li>Carrying out optional backup and restore</li>
+            <li>Carrying out optional backup, restore, and Prayer Brotherhood services</li>
+          </ul>
+        </div>
+        <div class="callout">
+          <div class="callout-title">Legal bases under KVKK (summary)</div>
+          <ul>
+            <li>Non-special on-device data such as language, widgets, and notification settings: performance of the service (KVKK Art. 5/2-c). Madhab, gender, and worship records: explicit consent (KVKK Art. 6). Accepting the policy in onboarding and saving the related preference counts as consent.</li>
+            <li>Google backup and Prayer Brotherhood: explicit consent (KVKK Art. 5/1; Art. 6 for special-category data included in backup). Enabling these features constitutes consent.</li>
+            <li>Support messages: performance of the service and legitimate interest (replying to requests)</li>
+            <li>Crash logs and anonymous statistics: legitimate interest (security and improvement)</li>
+            <li>Usage analytics: legitimate interest (app improvement)</li>
           </ul>
         </div>
       </section>
+
       <section>
         <h2>4. Third-party services</h2>
-        <p>Some features rely on Google / Firebase. Google sign-in uses Firebase Authentication and Google identity services. When you back up, your data is stored in Firebase Realtime Database linked to your account. Support messages are also stored in Firebase Realtime Database. Crash reports go to Firebase Crashlytics. Those providers have their own privacy policies; transfers are limited to what each feature needs.</p>
+        <p>Some features rely on the providers below. Transfers are limited to what each feature needs; providers have their own privacy policies.</p>
+        <div class="callout">
+          <div class="callout-title">Providers and transferred data</div>
+          <ul>
+            <li>Google / Firebase (Authentication, Realtime Database, Crashlytics, Analytics, FCM): backup, support, Prayer Brotherhood, crash, and analytics data</li>
+            <li>Huawei (Push Kit, HiAnalytics, AGConnect Crash): equivalent notification, analytics, and crash services on AppGallery builds</li>
+            <li>ezanvakti.imsakiyem.com: district id for timetables (no personal identity sent)</li>
+            <li>OpenStreetMap / Overpass / map tiles: nearby-mosque search may send coordinates to Overpass servers. Fallbacks include maps.mail.ru, so coordinates may leave Türkiye. Name and email are not sent.</li>
+            <li>Google Play / AppGallery: app distribution</li>
+            <li>Live video and Quran radio: opening a Harameyn stream or a radio station sends connection data (IP) to the stream host. The station list comes from mp3quran.net; Makkah and Madinah video comes from Akamai / GlobeCast. Account, name, and email are not sent.</li>
+          </ul>
+        </div>
         <div class="note">
           <svg class="lock" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1s3.1 1.39 3.1 3.1v2z"/></svg>
-          <span>The locality you pick for prayer times and any location permission for Qibla are not used for ad targeting or location sale.</span>
+          <span>Location is not used for profile sale or targeting.</span>
         </div>
       </section>
+
       <section>
         <h2>5. Retention, security, and deletion</h2>
-        <p>Local records stay in Android app storage under the platform’s security model. Support records are kept for as long as needed to handle your request and may be deleted afterward. Uninstalling the app removes local data. To request deletion of account- or backup-linked data, contact us via Settings &gt; Help &amp; Support.</p>
+        <p>Local records stay on your device; uninstalling removes them. Android device transfer (Quick Switch / cable) may move data; Google auto-backup is disabled.</p>
+        <div class="callout">
+          <div class="callout-title">Retention (summary)</div>
+          <ul>
+            <li>Local data: until you delete it or uninstall</li>
+            <li>Backup and Prayer Brotherhood: until your Google account or records are deleted</li>
+            <li>Support messages: as long as needed to handle the request and for dispute evidence</li>
+            <li>Crash/analytics: provider defaults and improvement needs</li>
+          </ul>
+        </div>
+        <p>Deletion and KVKK rights (Art. 11): You may request information, correction, deletion, know third-party recipients, and object to unlawful processing. Contact <a href="mailto:mekitech.tr@gmail.com">mekitech.tr@gmail.com</a> or Settings &gt; Help &amp; Support; we respond within 30 days. Backup and Prayer Brotherhood deletion requests are processed within a reasonable time after verification; server deletion may take longer than the response deadline. Report inappropriate Prayer Brotherhood content through the same channels.</p>
       </section>
+
       <section>
         <h2>6. Children</h2>
         <p>Kazamatik is not directed at children. We do not knowingly collect personal data from users under 13. If we learn that such data was submitted, we delete it.</p>
       </section>
+
       <section>
         <h2>7. Changes</h2>
-        <p>We may update this policy when features or legal requirements change. The effective date appears at the top of this page. We will try to notify you in-app of material changes.</p>
+        <p>We may update this policy; the effective date appears at the top of this screen and on the web page. We will try to notify you in-app of material changes.</p>
       </section>
+
       <section>
         <h2>8. Contact</h2>
-        <p>For privacy questions or requests, use Settings &gt; Help &amp; Support &gt; Contact Support.</p>
+        <p>Privacy and KVKK requests: <a href="mailto:mekitech.tr@gmail.com">mekitech.tr@gmail.com</a> or Settings &gt; Help &amp; Support &gt; Write to Us.<br>Web: <a href="https://mekitech.github.io/policies/kazamatik/">https://mekitech.github.io/policies/kazamatik/</a><br>Data controller: Mehmet Kirazlı (MeKiTech) — Eyüpsultan / Istanbul / Türkiye</p>
+      </section>
+
+      <section>
+        <h2>9. Device permissions</h2>
+        <p>Permissions are requested only for the related feature; if you deny them, that feature may be limited:</p>
+        <div class="callout">
+          <ul>
+            <li>Internet and network state: Prayer times, backup, support, Prayer Brotherhood, maps, live video, Quran radio, and update checks.</li>
+            <li>Notifications: Adhan alarms, worship reminders, and widget alerts.</li>
+            <li>Location (fine/coarse): Qibla direction, nearby mosques map, and location selection; no continuous background tracking.</li>
+            <li>Exact alarms and boot completed: Reliable adhan and worship alarms; rescheduling after device restart.</li>
+            <li>Foreground service / media playback: Adhan audio playing in the background.</li>
+            <li>Full-screen intent and wake lock: Reliable adhan alarm on the lock screen.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section>
+        <h2>10. International transfer</h2>
+        <p>Backup, support, Prayer Brotherhood, crash reports, analytics, and anonymous statistics may be processed on servers outside Türkiye (Google Firebase in the US etc., or Huawei infrastructure). Nearby-mosque coordinates may be sent to Overpass servers, including maps.mail.ru as a fallback, and live video or radio connections may be sent to the stream hosts. These transfers are required to provide those services. Local worship records remain on your device by default.</p>
+      </section>
+
+      <hr class="split">
+      <h2 class="doc-title">Terms of Use</h2>
+      <div class="date-block">
+        <div class="date-label">Effective date</div>
+        <div class="date-value">10 October 2026</div>
+      </div>
+
+      <section>
+        <h2>1. Acceptance</h2>
+        <p>By downloading, opening, or using Kazamatik, you agree to these Terms of Use and the Privacy Policy (<a href="https://mekitech.github.io/policies/kazamatik/">https://mekitech.github.io/policies/kazamatik/</a>). If you do not agree, do not use the app and uninstall it.</p>
+      </section>
+      <section>
+        <h2>2. Nature of the service</h2>
+        <p>Kazamatik is provided by Mehmet Kirazlı (MeKiTech) and offers tools for make-up prayer and fasting tracking, prayer times, adhan alarms, daily prayers, widgets, lock-screen prayer bar, qibla direction, nearby mosques, duas, names of Allah, dhikr counters, notes, Prayer Brotherhood, and similar helpers. It is not a fatwa authority, religious court, or mufti’s office. Madhab-based calculations are for practical convenience; consult a qualified authority if your situation is unclear.</p>
+      </section>
+      <section>
+        <h2>3. Acceptable use</h2>
+        <p>Use the app in line with applicable law. Unauthorized access, disruption, malware, or abuse of support channels is prohibited. Prayer Brotherhood must not contain abuse, hate, misleading, or unlawful content; report inappropriate content to <a href="mailto:mekitech.tr@gmail.com">mekitech.tr@gmail.com</a> or via Help &amp; Support. You are responsible for the accuracy of records you enter.</p>
+      </section>
+      <section>
+        <h2>4. Content and third-party sources</h2>
+        <p>How-to text and Q&amp;A are for general information only, not religious rulings. Prayer times come from external sources and may be wrong or delayed. Qibla direction depends on device sensors and location permission. Map information comes from third parties. The Harameyn stream and Quran radio are third-party content; we are not responsible for interruptions, delays, or that content. On the free plan these two features are limited to the daily duration shown in the app; playback stops when that time runs out. Backup uses Google / Firebase and is provided “as is”. Restore overwrites current device records with the selected account’s backup. Manual backup and restore follow the quota rules shown in the app.</p>
+      </section>
+      <section>
+        <h2>5. Account, backup, and notifications</h2>
+        <p>Google-account backup and Prayer Brotherhood are optional; enabling them means you accept the cloud processing terms in the Privacy Policy. You are responsible for account security. Manage notifications in Settings. Local data can be lost after a device change or uninstall if you did not back up. Legacy import from an older app version is optional and not guaranteed on every device.</p>
+      </section>
+      <section>
+        <h2>6. Intellectual property</h2>
+        <p>The Kazamatik name, interface, code, artwork, and original in-app content belong to Mehmet Kirazlı (MeKiTech) and respective owners. Unauthorized copying, reverse engineering (except where law allows), redistribution, or commercial repackaging is forbidden.</p>
+      </section>
+      <section>
+        <h2>7. Limitation of liability</h2>
+        <p>The service is provided “as is.” We do not warrant uninterrupted or error-free operation. To the fullest extent permitted by law, we are not liable for indirect damages arising from data loss, miscalculation, missed notifications, device incompatibility, or third-party outages. Mandatory consumer rights remain unaffected.</p>
+      </section>
+      <section>
+        <h2>8. Changes and termination</h2>
+        <p>These terms may be updated; the effective date is shown at the top of this screen and on the web page. Features may be added, changed, or removed. If you disagree, stop using the app. Serious violations may result in restricted account or support access.</p>
+      </section>
+      <section>
+        <h2>9. Governing law and contact</h2>
+        <p>These terms are governed by the laws of the Republic of Türkiye. Mandatory consumer rights remain unaffected, including courts at your place of residence where applicable.</p>
+        <p>Provider: Mehmet Kirazlı (MeKiTech)<br>Address: Eyüpsultan / Istanbul / Türkiye<br>Email: <a href="mailto:mekitech.tr@gmail.com">mekitech.tr@gmail.com</a><br>Web: <a href="https://mekitech.github.io/policies/kazamatik/">https://mekitech.github.io/policies/kazamatik/</a></p>
+        <p>Device permissions are described in the Privacy Policy.</p>
       </section>
     </article>
 
-    <p class="footer">Kazamatik · Mekitech</p>
+    <p class="footer">Kazamatik · MeKiTech</p>
   </main>
   <script>
     const tr = document.getElementById("lang-tr");
@@ -288,7 +548,9 @@
       btnTr.setAttribute("aria-pressed", String(isTr));
       btnEn.setAttribute("aria-pressed", String(!isTr));
       document.documentElement.lang = lang;
-      document.title = isTr ? "Kazamatik — Gizlilik Politikası" : "Kazamatik — Privacy Policy";
+      document.title = isTr
+        ? "Kazamatik — Gizlilik Politikası ve Kullanım Şartları"
+        : "Kazamatik — Privacy Policy and Terms of Use";
     }
     btnTr.addEventListener("click", () => setLang("tr"));
     btnEn.addEventListener("click", () => setLang("en"));
